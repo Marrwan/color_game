@@ -1,0 +1,77 @@
+/* body style */
+body{
+    background-color: #232323;
+    margin: 0;
+    font-family:"Montserrat", "Avenir";
+}
+
+/* let's style our first block */
+h1{
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    background-color: steelblue;
+    padding: 20px 0;
+}
+#colorDisplay{
+    font-size:200% ;
+}
+
+/* Now our second block */
+#stripe{
+    background-color: white;
+    height: 30px;
+    text-align: center;
+}
+#message{
+    display: inline-block;
+    width: 20%;
+}
+
+/* our button in the second block */
+button{
+    outline: none;
+    border: none;
+    background:none;
+    text-transform: uppercase;
+    height: 100%;
+    font-weight: 700;
+    color: steelblue;
+    letter-spacing: 1px;
+    font-size: inherit;
+    transition: all 2.0s;
+    -webkit-transition:  all 2.0s;
+    -moz-transition:  all 2.0s;
+}
+button:hover{
+    color: white;
+    background-color: steelblue;
+}
+
+/* Our third block */
+.container {
+    max-width: 600px;
+    margin:20px auto;
+}
+.square{
+    transition: background 1.0s;
+    -webkit-transition: background 1.0s;
+    -moz-transition: background 1.0s;
+    border-radius: 20%;
+    width:30%;
+    /* we initialy set the color of the boxes in our to style them */
+    background: pink;
+    padding-bottom: 30%;
+    float: left;
+    margin: 1.66%;
+}
+
+/* this one is to be added using JS 
+But the hard button has this already, so we would need to remove it later 
+when we click the easy button */
+.selected{
+    background-color: steelblue;
+    color: white;
+}

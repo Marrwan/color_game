@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+   
+    <title>Color Game</title>
+</head>
+<body>
+    <!-- we should have three blocks on our page -->
+   <!-- One for the title of our game and the place our rgb code will display itself! -->
+   <!-- Two is the one for clicking newgame, easy or hard -->
+   <!-- three is the actual blocks of color- the game -->
+
+   <!-- FIRST BLOCK -->
+   <h1>
+    <a href="https://www.abdulbaasit.me" style="color:white; text-decoration:none">Abdulbasit</a>
+    <br>
+    <span id="colorDisplay">RGB</span> 
+    <br>
+    color game
+   </h1>
+
+   <!-- SECOND BLOCK -->
+   <div id="stripe">
+       <!-- we should have three buttons, one for new game, one for easy, one for hard! -->
+    <button id="reset">New Colors</button>
+    <!-- this is what will show us whether we won or lost 👇👇-->
+    <span id="message"></span>
+    <button id="easy">Easy</button>
+    
+    <button id="hard" class="selected" >Hard</button>
+</div>
+
+<!-- THIRD BLOCK -->
+<div class="container">
+    <!-- these are the number of squares we will be having. Remember div is a square by default -->
+        <div class="square"></div> 
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+</div>
+</body>
+ <script src="main.js"></script>
+</html>
